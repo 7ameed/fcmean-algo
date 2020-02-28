@@ -123,7 +123,7 @@ let newMue42 = ((2.25/0.25) + (2.25/2.25) +  (2.5/9))^-1  = 0.09
 //              (d4-c3)^2      (d4-c3)^2    (d4-c3)^2
 // newMuew43 =( ---------   +  ---------  + ---------)^1
 //              (d4-c1)^2      (d4-c2)^2    (d4-c3)^2
-let newMue33 = ((9/0.25)    +  (9/2.25)   +  (9/9))^-1 = 0.02
+let newMue43 = ((9/0.25)    +  (9/2.25)   +  (9/9))^-1 = 0.02
 
 ```
 then we start the second itteration with the following data
