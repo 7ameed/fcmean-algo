@@ -221,8 +221,8 @@ var vectors = [[1, 3], [1.5, 3.2], [1.3, 2.8], [3, 1]] // dataset
 var threshold = 0.0000000000005
 
 // optional paramters
-// const fuzziness= 2
-// const maxItterations= 100
+// var fuzziness= 2
+// var maxItterations= 100
 var result = fcMean.start(k, vectors, threshold)
 
 // for logging purpose
