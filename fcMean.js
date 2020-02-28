@@ -89,9 +89,9 @@ var fcMean = function () {
      * @param {Array<Array>} vectors
      * @param {Number} threshold 
      * @param {Number} fuzziness defults to `2`
-     * @param {Number} FCMEANS_MAX_ITERATIONS defaults to `100`
+     * @param {Number} fc_means_max_itterations defaults to `100`
      */
-    function fcmeans(k, vectors, threshold, fuzziness = 2, FCMEANS_MAX_ITERATIONS = 100) {
+    function fcmeans(k, vectors, threshold, fuzziness = 2, fc_means_max_itterations = 100) {
         var membershipMatrix = new Matrix(vectors.length, k);
         var repeat = true;
         var numberOfItrs = 0;
@@ -164,7 +164,7 @@ var fcMean = function () {
             numberOfItrs++;
 
             // check nb of iters
-            if (numberOfItrs > FCMEANS_MAX_ITERATIONS)
+            if (numberOfItrs > fc_means_max_itterations)
                 repeat = false;
         }
         return { centroids, membershipMatrix, numberOfItrs: numberOfItrs - 1, diff: max };
