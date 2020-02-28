@@ -216,14 +216,20 @@ Array.prototype.compare = function (testArr) {
 }
 
 // run
-var k = 2 // number of clusters
-var vectors = [[1, 3], [1.5, 3.2], [1.3, 2.8], [3, 1]] // dataset
-var threshold = 0.0000000000005
+var k = 2; // number of clusters
+var vectors = [[1, 3], [1.5, 3.2], [1.3, 2.8], [3, 1]]; // dataset
+var threshold = 0.0000000000005;
 
 // optional paramters
 // var fuzziness= 2
 // var maxItterations= 100
-var result = fcMean.start(k, vectors, threshold)
+var result = fcMean.start(
+    k,
+    vectors,
+    threshold,
+    //fuzziness,
+    //maxItterations
+);
 
 // for logging purpose
-console.log(JSON.stringify(result, null, 2))
+console.log(JSON.stringify(result, null, 2));
