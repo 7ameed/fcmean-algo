@@ -26,14 +26,14 @@ you can run the algorith using the browser by simply
 
 let the initial centroids c = [0.01, 2.4, 3.2]
 
-let the dataset s = [[1, 2], [3, 4]]
+let the dataset x = [[1, 2], [3, 4]]
 
 calculate 2 itterations
 
 answer :
 at first itteration we have the following
 ```js
-let s= [
+let x= [
 //x1, x2
   [1, 2], 
 //x3, x4  
@@ -129,7 +129,7 @@ let newMue33 = ((9/0.25)    +  (9/2.25)   +  (9/9))^-1 = 0.02
 then we start the second itteration with the following data
 
 ```js
-let s= [
+let x= [
 //x1, x2
   [1, 2], 
 //x3, x4  
